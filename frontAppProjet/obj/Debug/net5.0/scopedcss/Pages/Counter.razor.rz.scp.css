@@ -1,0 +1,48 @@
+.title[b-szrq9cos7u],
+.pointsCount[b-szrq9cos7u],
+.game[b-szrq9cos7u] {
+  text-align: center;
+  color: white;
+}
+
+.game[b-szrq9cos7u] {
+  margin: 2vh;
+}
+
+.game .btn[b-szrq9cos7u] {
+  border-radius: 25px;
+  margin: 2rem;
+  background-color: #689cd2;
+  padding: 15px;
+  box-shadow: 0px 1px 0 #4188d2, 1px 2px 0 #4188d2, 2px 3px 0 #4188d2,
+    3px 4px 0 #4188d2, 4px 5px 0 #4188d2, 1px 0 0 #0d58a6, 2px 1px 0 #0d58a6,
+    3px 2px 0 #0d58a6, 4px 3px 0 #0d58a6, 5px 4px 0 #0d58a6;
+  position: relative;
+}
+
+.game .btn:hover[b-szrq9cos7u] {
+  background-color: #608fbf;
+  box-shadow: 0px 1px 0 #4188d2, 1px 2px 0 #4188d2, 2px 3px 0 #4188d2,
+    1px 0 0 #0d58a6, 2px 1px 0 #0d58a6, 3px 2px 0 #0d58a6;
+  position: relative;
+}
+
+.game .game_monkey .zoominator:active[b-szrq9cos7u] {
+  transform: scale(1.1);
+}
+
+.game .game_monkey .zoominator[b-szrq9cos7u] {
+  transition: 0.1s;
+}
+
+.game .timer[b-szrq9cos7u] {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.btn_save[b-szrq9cos7u] {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}

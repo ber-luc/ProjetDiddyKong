@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/Users/lucberghof/Documents/Dotnet2cours/exempleCours/frontAppProjet/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/lucberghof/Documents/Dotnet2cours/exempleCours/frontAppProjet/obj/Debug/net5.0/scopedcss/bundle/" />
+</StaticWebAssets>

@@ -1,0 +1,48 @@
+.title,
+.pointsCount,
+.game {
+  text-align: center;
+  color: white;
+}
+
+.game {
+  margin: 2vh;
+}
+
+.game .btn {
+  border-radius: 25px;
+  margin: 2rem;
+  background-color: #689cd2;
+  padding: 15px;
+  box-shadow: 0px 1px 0 #4188d2, 1px 2px 0 #4188d2, 2px 3px 0 #4188d2,
+    3px 4px 0 #4188d2, 4px 5px 0 #4188d2, 1px 0 0 #0d58a6, 2px 1px 0 #0d58a6,
+    3px 2px 0 #0d58a6, 4px 3px 0 #0d58a6, 5px 4px 0 #0d58a6;
+  position: relative;
+}
+
+.game .btn:hover {
+  background-color: #608fbf;
+  box-shadow: 0px 1px 0 #4188d2, 1px 2px 0 #4188d2, 2px 3px 0 #4188d2,
+    1px 0 0 #0d58a6, 2px 1px 0 #0d58a6, 3px 2px 0 #0d58a6;
+  position: relative;
+}
+
+.game .game_monkey .zoominator:active {
+  transform: scale(1.1);
+}
+
+.game .game_monkey .zoominator {
+  transition: 0.1s;
+}
+
+.game .timer {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.btn_save {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}

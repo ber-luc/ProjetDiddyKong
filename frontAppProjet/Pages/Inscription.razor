@@ -1,0 +1,55 @@
+@page "/inscription"
+@inject HttpClient Http
+@inject NavigationManager UriHelper
+
+
+<div class="content-login">
+    <div class="login-page">
+        <div class="form">
+            <div class="login">
+                <div class="login-header">
+                    <h3>
+                        <i class="fa fa-lock" aria-hidden="true"></i>INSCRIPTION
+                    </h3>
+                    <p>Merci de rentrer vos identifiants</p>
+                    <span class="error">@error</span>
+                </div>
+            </div>
+            <form class="login-form">
+                <input type="text" placeholder="Email" @bind="email" />
+                <input type="password" placeholder="Mot de passe" @bind="password1" />
+                <input type="password" placeholder="Confirmation du mot de passe" @bind="password2" />
+                <button type="button" @onclick="InscriptionVerification">Inscription</button>
+                <p class="message">Déjà un compte ? <a href="/">Se connecter</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string error;
+    private string email;
+    private string password1;
+    private string password2;
+    private clicker.model.User user;
+
+    private HttpResponseMessage response;
+
+    private async void InscriptionVerification()
+    {
+        if (password1 == password2)
+        {
+            user = new clicker.model.User() { Email = email, Password = password1 };
+            HttpResponseMessage response = await
+            Http.PostAsJsonAsync<clicker.model.User>("https://micheul.alwaysdata.net/User/Register", user);
+            if (response.IsSuccessStatusCode)
+            {
+                UriHelper.NavigateTo("/");
+            }
+        }
+        else
+        {
+            error = "Vos mots de passe ne correspondent pas";
+        }
+    }
+}

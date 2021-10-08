@@ -1,0 +1,32 @@
+[
+  {
+    "id": 7,
+    "email": "lemectrobalèz@gmail.com",
+    "password": "0",
+    "score": 5555,
+    "clickPower": 0,
+    "timerPower": 0,
+    "playtime": 0,
+    "token": "string"
+  },
+  {
+    "id": 1,
+    "email": "fsurma@myges.fr",
+    "password": "0",
+    "score": 5,
+    "clickPower": 0,
+    "timerPower": 0,
+    "playtime": 0,
+    "token": "string"
+  },
+  {
+    "id": 2,
+    "email": "michel@gmail.com",
+    "password": "caca",
+    "score": 0,
+    "clickPower": 0,
+    "timerPower": 0,
+    "playtime": 0,
+    "token": ""
+  }
+]
